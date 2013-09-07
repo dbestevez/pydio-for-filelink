@@ -1,0 +1,146 @@
+#provider-management {
+    color: #555555;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+
+#provider-management a {
+    color: #232323;
+}
+
+#provider-footer,
+#provider-header {
+    border-bottom: 1px solid #c4c4c4;
+    clear: both;
+    font-size: 80%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+#provider-header #logo {
+    height: 37px;
+}
+
+#provider-content {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #c4c4c4;
+    margin: 0;
+    padding: 10px 0px 20px 0px;
+}
+
+#provider-footer {
+    border-bottom: 0;
+    border-top: 1px solid #ffffff;
+}
+
+#provider-footer #ajaxplorer-for-filelink-info {
+    padding: 6px 0px 3px 0px;
+    text-align: right;
+}
+
+#provider-footer #ajaxplorer-info {
+    padding: 3px 0px 6px 0px;
+    text-align: right;
+}
+
+#provider-used-space {
+    float: left;
+}
+
+#provider-remaining-space {
+    float: right;
+}
+
+#provider-service-info {
+    padding: 10px 0px 30px 0px;
+}
+
+#provider-service-info #service-label {
+    padding: 0px 10px 0px 0px;
+}
+
+#provider-space-legend {
+    clear: both;
+    height: 10px;
+    margin: 0;
+    padding: 10px 0px;
+    text-align: left;
+}
+
+#remaining-space-bar,
+#used-space-bar {
+    float: left;
+    height: 36px;
+}
+
+#remaining-space-fill,
+#used-space-fill {
+    height: 100%;
+    width: 100%;
+}
+
+#used-space-fill {
+    border-right: 1px solid #232323;
+}
+
+#total-space-bar {
+    border: 1px solid #232323;
+    border-radius: 2px;
+    height: 36px;
+    margin: 0;
+    width: 100%;
+}
+
+#unknown-fix {
+    display: none;
+}
+
+.meter {
+	position: relative;
+	overflow: hidden;
+}
+
+.meter:after {
+	background-image: linear-gradient(
+		  -45deg,
+	      rgba(255, 255, 255, .2) 25%,
+	      transparent 25%,
+	      transparent 50%,
+	      rgba(255, 255, 255, .2) 50%,
+	      rgba(255, 255, 255, .2) 75%,
+	      transparent 75%,
+	      transparent
+	   );
+	background-size: 50px 50px;
+    bottom: 0;
+	content: "";
+    left: 0;
+	position: absolute;
+    right: 0;
+	top: 0;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.blue {
+    background-color: rgb(23,111,166);
+	background-image: linear-gradient(to bottom, rgb(23,111,166), rgb(21,123,187));
+}
+
+.green {
+	background-image: linear-gradient(to bottom, #3DDE3D, #57A757);
+}
+
+.red {
+	background-image: linear-gradient(to bottom, #FD3E33, #BE3D35);
+}
+
+.yellow {
+	background-image: linear-gradient(to bottom, #FFD468 , #FDC333);
+}

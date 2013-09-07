@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   AjaXplorer for Filelink is an extension for Mozilla Thunderbird that allows
+   you to easily send file attachments by uploading them to an storage service
+   that uses AjaXplorer as file management system.
+   
+   Copyright (C) 2013  Diego Blanco Estévez
+   
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as
+   published by the Free Software Foundation, either version 3 of the
+   License, or (at your option) any later version.
+  
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+  
+   You should have received a copy of the GNU Affero General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html [
+<!ENTITY % htmlDTD PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd"> %htmlDTD;
+<!ENTITY % ajaxplorerDTD SYSTEM "chrome://ajaxplorer-for-filelink/locale/settings.dtd"> %ajaxplorerDTD;
+]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="chrome://messenger/skin/cloudfile/addAccountDialog.css" />
+        <link rel="stylesheet" type="text/css" href="chrome://ajaxplorer-for-filelink/skin/settings.css" />
+        <script type="application/javascript" src="chrome://ajaxplorer-for-filelink/content/settings.js"></script>
+    </head>
+    <body id="provider-settings" onload="onLoadProvider();">
+        <form id="provider-form" onsubmit="return false;">
+            <table id="account-settings">
+                <tr>
+                    <td class="name" colspan="2">
+                        <label for="display-name">&ajaxplorerStgs.provider;</label>
+                    </td>
+                    <td class="value" colspan="2">
+                        <input id="display-name" required="required" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name" colspan="2">
+                        <label for="base-url">&ajaxplorerStgs.url;</label>
+                    </td>
+                    <td class="value" colspan="2">
+                        <input id="base-url" required="required" type="text" value="https://www.grandesficheros.com/"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="account">&ajaxplorerStgs.account;</label>
+                    </td>
+                    <td colspan="2">
+                        <select id="account" onchange="changeAccount();">
+                            <option id="custom-option" value="custom">&ajaxplorerStgs.custom;</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name" colspan="2">
+                    <label id="username-text" for="username">&ajaxplorerStgs.username;</label>
+                </td>
+                    <td class="value" colspan="2">
+                        <input id="username" required="required" type="text" value=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="check">
+                        <input id="total-storage-enabled" type="checkbox" onchange="enable(this);"/>
+                    </td>
+                    <td class="name">
+                        <label for="total-storage">&ajaxplorerStgs.quota;</label>
+                    </td>
+                    <td class="mid-value">
+                        <input id="total-storage" onchange="number(this);" type="text"/>
+                    </td>
+                    <td class="unit">
+                        <select id="total-storage-unit">
+                            <option value="Gb">Gb</option>
+                            <option value="Mb">Mb</option>
+                            <option value="Kb">Kb</option>
+                            <option value="b">b</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

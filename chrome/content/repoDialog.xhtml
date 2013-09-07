@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   AjaXplorer for Filelink is an extension for Mozilla Thunderbird that allows
+   you to easily send file attachments by uploading them to an storage service
+   that uses AjaXplorer as file management system.
+   
+   Copyright (C) 2013  Diego Blanco Estévez
+   
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as
+   published by the Free Software Foundation, either version 3 of the
+   License, or (at your option) any later version.
+  
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+  
+   You should have received a copy of the GNU Affero General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html [
+    <!ENTITY % htmlDTD PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd"> %htmlDTD;
+    <!ENTITY % ajaxplorerDTD SYSTEM "chrome://ajaxplorer-for-filelink/locale/settings.dtd"> %ajaxplorerDTD;
+]>
+
+<dialog id="ajaxplorer-captcha" title="AjaXplorer"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  buttons="accept,cancel"
+  ondialogaccept="return onOK();">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <link rel="stylesheet" type="text/css" href="chrome://global/skin/global.css" />
+            <link rel="stylesheet" type="text/css" href="chrome://messenger/skin/cloudfile/addAccountDialog.css" />
+            <link rel="stylesheet" type="text/css" href="chrome://ajaxplorer-for-filelink/skin/settings.css" />
+            <script type="application/javascript" src="chrome://ajaxplorer-for-filelink/content/repoDialog.js"/>
+        </head>
+        <body id="provider-settings" onload="onLoad();">
+            <form id="provider-form" onsubmit="return false;">
+                <table id="account-captcha">
+                    <tr>
+                        <td>
+                            <label for="repository">&ajaxplorerStgs.repository;</label>
+                        </td>
+                        <td>
+                            <select id="repository">
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </body>
+    </html>
+</dialog>

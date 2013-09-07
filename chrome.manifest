@@ -1,0 +1,11 @@
+content    ajaxplorer-for-filelink       chrome/content/
+skin       ajaxplorer-for-filelink       classic/1.0 chrome/skin/
+locale     ajaxplorer-for-filelink en-GB chrome/locale/en-GB/
+locale     ajaxplorer-for-filelink en-US chrome/locale/en-US/
+locale     ajaxplorer-for-filelink es-AR chrome/locale/es-AR/
+locale     ajaxplorer-for-filelink es-ES chrome/locale/es-ES/
+locale     ajaxplorer-for-filelink gl-ES chrome/locale/gl-ES/
+
+component {0a2c6470-5822-11e2-bcfd-0800200c9a66} nsAjaXplorer.js
+contract @mozilla.org/mail/ajaxplorer-for-filelink;1 {0a2c6470-5822-11e2-bcfd-0800200c9a66}
+category cloud-files AjaXplorer4Filelink @mozilla.org/mail/ajaxplorer-for-filelink;1

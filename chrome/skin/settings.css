@@ -1,0 +1,47 @@
+#account-captcha,
+#account-settings {
+    min-width: 300px;
+	width: 100%;
+}
+
+#account-captcha tr td,
+#account-settings tr td {
+	padding: 3px 0px;
+}
+
+#account-settings tr td #password,
+#account-settings tr td #username {
+    width: 70%;
+}
+
+#account-settings .check {
+    text-align: center;
+	width: 5%;
+}
+
+#account-settings .name {
+    width: 20%;
+}
+
+#account-settings .mid-value {
+    width: 20%;
+}
+
+#account-settings .value {
+	width: 60%;
+}
+
+#captcha-image {
+    cursor: pointer;
+}
+
+#captcha-image-outer {
+    background: url("chrome://ajaxplorer-for-filelink/skin/loader.gif") no-repeat 69px 24px;
+    height: 80px;
+    width: 170px;
+    margin: 0 auto;
+}
+
+#captcha-image-cell {
+    text-align: center;
+}

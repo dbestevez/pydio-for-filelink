@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   AjaXplorer for Filelink is an extension for Mozilla Thunderbird that allows
+   you to easily send file attachments by uploading them to an storage service
+   that uses AjaXplorer as file management system.
+
+   Copyright (C) 2013  Diego Blanco Estévez
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as
+   published by the Free Software Foundation, either version 3 of the
+   License, or (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+
+   You should have received a copy of the GNU Affero General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html [
+    <!ENTITY % htmlDTD PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd"> %htmlDTD;
+    <!ENTITY % managementDTD SYSTEM "chrome://messenger/locale/cloudfile/management.dtd"> %managementDTD;
+    <!ENTITY % ajaxplorerDTD SYSTEM "chrome://ajaxplorer-for-filelink/locale/management.dtd"> %ajaxplorerDTD;
+]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <script type="text/javascript;version=1.8" src="chrome://ajaxplorer-for-filelink/content/management.js"/>
+        <link rel="stylesheet" type="text/css" href="chrome://messenger/skin/preferences/preferences.css"/>
+        <link rel="stylesheet" type="text/css" href="chrome://ajaxplorer-for-filelink/skin/management.css"/>
+    </head>
+    <body id="provider-management">
+        <div id="provider-header">
+            <div id="ajaxplorer-logo">
+                <img id="logo" src="chrome://ajaxplorer-for-filelink/skin/logo.png"/>
+            </div>
+        </div>
+        <div id="provider-content">
+            <div id="provider-service-info">
+                <span id="service-label">
+                    &ajaxplorerMgmt.provider;
+                </span>
+                <span id="service-link">
+                    <a id="service"></a>
+                </span>
+            </div>
+            <div id="provider-spacebox">
+                <div id="provider-space-legend">
+                    <div id="provider-used-space">
+                        <span class="space-swatch green" id="file-space-used-swatch"/>
+                        <label>&ajaxplorerMgmt.usedSpace;</label>
+                        <span id="file-space-used"/>
+                    </div>
+                    <div id="provider-remaining-space">
+                        <span class="space-swatch blue" id="remaining-space-swatch"/>
+                        <label>&ajaxplorerMgmt.unusedSpace;</label>
+                        <span id="remaining-file-space"/>
+                    </div>
+                </div>
+                <div id="total-space-bar">
+                    <div id="used-space-bar">
+                        <div class="meter green" id="used-space-fill"></div>
+                    </div>
+                    <div id="remaining-space-bar">
+                        <div class="blue" id="remaining-space-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="provider-footer">
+            <div id="ajaxplorer-for-filelink-info">
+                <a href="https://github.com/dbestevez/ajaxplorer-for-filelink">AjaXplorer for Filelink</a> &ajaxplorerMgmt.developedBy; Diego Blanco Estévez
+            </div>
+            <div id="ajaxplorer-info">
+                <a href="http://www.ajaxplorer.info">AjaXplorer</a> &ajaxplorerMgmt.developedBy; <a href="http://cdujeu.me">Charles du Jeu</a>
+            </div>
+            <div class="clear" style="clear: both"></div>
+        </div>
+        <div id="unknown-fix">&ajaxplorerMgmt.unknown;</div>
+    </body>
+</html>
