@@ -967,7 +967,7 @@ nsAjaXplorer.prototype = {
      * @param failureCallback  Called back on error.
      */
     _login: function nsA4F__login(successCallback, failureCallback) {
-        var pass = this._password;
+        var pass = encodeURIComponent(this._password);
 
         if (this._loginSeed != "-1") {
             pass = this.md5(this.md5(this._password) + this._loginSeed);
