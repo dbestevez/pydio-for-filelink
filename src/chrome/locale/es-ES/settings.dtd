@@ -21,13 +21,13 @@
  */
 -->
 
-<!ENTITY ajaxplorerStgs.provider "Proveedor">
-<!ENTITY ajaxplorerStgs.url "Dirección">
-<!ENTITY ajaxplorerStgs.account "Cuenta">
-<!ENTITY ajaxplorerStgs.username "Usuario">
-<!ENTITY ajaxplorerStgs.password "Contraseña">
-<!ENTITY ajaxplorerStgs.custom "Personalizada">
-<!ENTITY ajaxplorerStgs.code "Código">
-<!ENTITY ajaxplorerStgs.quota "Cuota">
-<!ENTITY ajaxplorerStgs.filesize "Tamaño de archivo">
-<!ENTITY ajaxplorerStgs.repository "Repositorio">
+<!ENTITY settings.provider "Proveedor">
+<!ENTITY settings.url "Dirección">
+<!ENTITY settings.account "Cuenta">
+<!ENTITY settings.username "Usuario">
+<!ENTITY settings.password "Contraseña">
+<!ENTITY settings.custom "Personalizada">
+<!ENTITY settings.code "Código">
+<!ENTITY settings.quota "Cuota">
+<!ENTITY settings.filesize "Tamaño de archivo">
+<!ENTITY settings.repository "Repositorio">

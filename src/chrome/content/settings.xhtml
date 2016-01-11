@@ -36,7 +36,7 @@
             <table id="account-settings">
                 <tr>
                     <td class="name" colspan="2">
-                        <label for="display-name">&ajaxplorerStgs.provider;</label>
+                        <label for="display-name">&settings.provider;</label>
                     </td>
                     <td class="value" colspan="2">
                         <input id="display-name" required="required" type="text"/>
@@ -44,7 +44,7 @@
                 </tr>
                 <tr>
                     <td class="name" colspan="2">
-                        <label for="base-url">&ajaxplorerStgs.url;</label>
+                        <label for="base-url">&settings.url;</label>
                     </td>
                     <td class="value" colspan="2">
                         <input id="base-url" required="required" type="text" placeholder="http://www.grandesficheros.com/"/>
@@ -52,17 +52,17 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label for="account">&ajaxplorerStgs.account;</label>
+                        <label for="account">&settings.account;</label>
                     </td>
                     <td colspan="2">
                         <select id="account" onchange="changeAccount();">
-                            <option id="custom-option" value="custom">&ajaxplorerStgs.custom;</option>
+                            <option id="custom-option" value="custom">&settings.custom;</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td class="name" colspan="2">
-                    <label id="username-text" for="username">&ajaxplorerStgs.username;</label>
+                    <label id="username-text" for="username">&settings.username;</label>
                 </td>
                     <td class="value" colspan="2">
                         <input id="username" required="required" type="text" value=""/>
@@ -73,7 +73,7 @@
                         <input id="total-storage-enabled" type="checkbox" onchange="enable(this);"/>
                     </td>
                     <td class="name">
-                        <label for="total-storage">&ajaxplorerStgs.quota;</label>
+                        <label for="total-storage">&settings.quota;</label>
                     </td>
                     <td class="mid-value">
                         <input id="total-storage" onchange="number(this);" type="text"/>

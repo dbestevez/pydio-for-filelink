@@ -21,8 +21,8 @@
  */
 -->
 
-<!ENTITY ajaxplorerMgmt.developedBy "desenvolvido por">
-<!ENTITY ajaxplorerMgmt.provider "Provedor: ">
-<!ENTITY ajaxplorerMgmt.usedSpace "Espazo usado: ">
-<!ENTITY ajaxplorerMgmt.unusedSpace "Espazo dispoñible: ">
-<!ENTITY ajaxplorerMgmt.unknown "Descoñecido">
+<!ENTITY management.developedBy "desenvolvido por">
+<!ENTITY management.provider "Provedor: ">
+<!ENTITY management.usedSpace "Espazo usado: ">
+<!ENTITY management.unusedSpace "Espazo dispoñible: ">
+<!ENTITY management.unknown "Descoñecido">

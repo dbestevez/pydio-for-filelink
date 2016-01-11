@@ -20,8 +20,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 -->
-<!ENTITY ajaxplorerMgmt.developedBy "Développé par">
-<!ENTITY ajaxplorerMgmt.provider "Prestataire: ">
-<!ENTITY ajaxplorerMgmt.usedSpace "Espace utilisé: ">
-<!ENTITY ajaxplorerMgmt.unusedSpace "Espace inutilisé: ">
-<!ENTITY ajaxplorerMgmt.unknown "Inconnu">
+<!ENTITY management.developedBy "Développé par">
+<!ENTITY management.provider "Prestataire: ">
+<!ENTITY management.usedSpace "Espace utilisé: ">
+<!ENTITY management.unusedSpace "Espace inutilisé: ">
+<!ENTITY management.unknown "Inconnu">
