@@ -5,6 +5,7 @@ locale     ajaxplorer-for-filelink en-US chrome/locale/en-US/
 locale     ajaxplorer-for-filelink es-AR chrome/locale/es-AR/
 locale     ajaxplorer-for-filelink es-ES chrome/locale/es-ES/
 locale     ajaxplorer-for-filelink gl-ES chrome/locale/gl-ES/
+locale     ajaxplorer-for-filelink fr-FR chrome/locale/fr-FR/
 
 component {0a2c6470-5822-11e2-bcfd-0800200c9a66} nsAjaXplorer.js
 contract @mozilla.org/mail/ajaxplorer-for-filelink;1 {0a2c6470-5822-11e2-bcfd-0800200c9a66}
