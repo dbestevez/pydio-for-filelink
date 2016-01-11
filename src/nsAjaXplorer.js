@@ -1444,7 +1444,8 @@ nsAXPUploader.prototype = {
             + "index.php?secure_token=" + secureToken
             + "&get_action=" + A4F_ACTION_SHARE
             + "&dir=" + encodeURIComponent(A4F_UPLOAD_DIR)
-            + "&file=" + encodeURIComponent(A4F_UPLOAD_DIR) + this.fileName;
+            + "&file=" + encodeURIComponent(A4F_UPLOAD_DIR) + this.fileName
+            + "&sub_action=create_minisite";
             //~ + "&expiration=" + A4F_EXPIRATION
             //~ + "&downloadlimit=" + A4F_DOWNLOAD_LIMIT;
 
