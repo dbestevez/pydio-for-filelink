@@ -40,12 +40,12 @@ function extraArgs() {
     }
 
 	return {
-        "displayName"  : { type : "char", value : displayName  },
-        "baseURL"      : { type : "char", value : baseURL      },
-		"username"     : { type : "char", value : username     },
-		"password"     : { type : "char", value : ""           },
-        "repositoryId" : { type : "char", value : "-1"         },
-        "totalStorage" : { type : "char", value : totalStorage },
+        "displayName":  { type : "char", value : displayName  },
+        "baseURL":      { type : "char", value : baseURL      },
+        "username":     { type : "char", value : username     },
+        "password":     { type : "char", value : ""           },
+        "repositoryId": { type : "char", value : "-1"         },
+        "totalStorage": { type : "char", value : totalStorage },
 	};
 }
 
