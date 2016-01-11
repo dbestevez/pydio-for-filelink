@@ -7,13 +7,11 @@
     color: #232323;
 }
 
-#provider-footer,
 #provider-header {
     border-bottom: 1px solid #c4c4c4;
-    clear: both;
     font-size: 80%;
     margin: 0;
-    padding: 0;
+    padding-bottom: 10px;
     width: 100%;
 }
 
@@ -24,29 +22,13 @@
 }
 
 #provider-header #logo {
-    height: 37px;
+    height: 50px;
 }
 
 #provider-content {
     border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #c4c4c4;
     margin: 0;
     padding: 10px 0px 20px 0px;
-}
-
-#provider-footer {
-    border-bottom: 0;
-    border-top: 1px solid #ffffff;
-}
-
-#provider-footer #ajaxplorer-for-filelink-info {
-    padding: 6px 0px 3px 0px;
-    text-align: right;
-}
-
-#provider-footer #ajaxplorer-info {
-    padding: 3px 0px 6px 0px;
-    text-align: right;
 }
 
 #provider-used-space {
