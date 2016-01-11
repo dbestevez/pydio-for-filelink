@@ -5,11 +5,11 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>filelink@ajaxplorer</em:id>
-    <em:name>AjaXplorer for Filelink</em:name>
+    <em:name>Pydio for Filelink</em:name>
     <em:version>1.4.1</em:version>
     <em:creator>Diego Blanco Estévez</em:creator>
 	  <em:description>
-        Adds support to use Mozilla Filelink with an AjaXplorer account.
+        Adds support to use Mozilla Filelink with an Pydio account.
     </em:description>
     <em:targetApplication>
       <Description>

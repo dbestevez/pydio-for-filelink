@@ -36,7 +36,7 @@
 }
 
 #captcha-image-outer {
-    background: url("chrome://ajaxplorer-for-filelink/skin/loader.gif") no-repeat 69px 24px;
+    background: url("chrome://pydio-for-filelink/skin/loader.gif") no-repeat 69px 24px;
     height: 80px;
     width: 170px;
     margin: 0 auto;

@@ -1,7 +1,7 @@
 /*
- * AjaXplorer for Filelink is an extension for Mozilla Thunderbird that allows
+ * Pydio for Filelink is an extension for Mozilla Thunderbird that allows
  * you to easily send file attachments by uploading them to an storage service
- * that uses AjaXplorer as file management system.
+ * that uses Pydio as file management system.
  *
  * Copyright (C) 2013  Diego Blanco Estévez
  *
@@ -25,24 +25,24 @@ Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource:///modules/gloda/log4moz.js");
 Cu.import("resource:///modules/cloudFileAccounts.js");
-Cu.import("chrome://ajaxplorer-for-filelink/content/defs.js");
+Cu.import("chrome://pydio-for-filelink/content/defs.js");
 
 
 /////////////////////////
-// nsAjaXplorer Object //
+// nsPydio Object //
 /////////////////////////
-function nsAjaXplorer() {
-    this.log = Log4Moz.getConfiguredLogger("AjaXplorer4Filelink");
+function nsPydio() {
+    this.log = Log4Moz.getConfiguredLogger("Pydio4Filelink");
 }
 
-nsAjaXplorer.prototype = {
+nsPydio.prototype = {
 
     // nsISupports
     QueryInterface: XPCOMUtils.generateQI([Ci.nsIMsgCloudFileProvider]),
 
     classID: Components.ID("{0a2c6470-5822-11e2-bcfd-0800200c9a66}"),
 
-    get type() "AjaXplorer",
+    get type() "Pydio",
     get displayName() this._displayName,
     get serviceURL() this._baseURL,
     get iconClass() A4F_URL_ICON,
@@ -57,7 +57,7 @@ nsAjaXplorer.prototype = {
     _accountKey: null,
     _prefBranch: null,
 
-    _displayName: "AjaXplorer",
+    _displayName: "Pydio",
     _baseURL: "",
     _username: "",
     _password: "",
@@ -461,7 +461,7 @@ nsAjaXplorer.prototype = {
     },
 
     /**
-     * Logs into the AjaXplorer account.
+     * Logs into the Pydio account.
      *
      * @param successCallback  Called if login is successful.
      * @param failureCallback  Called back on error.
@@ -687,7 +687,7 @@ nsAjaXplorer.prototype = {
     },
 
     /**
-     * Creates a new folder in the AjaXplorer account where the files will be
+     * Creates a new folder in the Pydio account where the files will be
      * uploaded.
      */
     _createUploadFolder: function nsA4F__createUploadFolder(
@@ -961,7 +961,7 @@ nsAjaXplorer.prototype = {
     },
 
     /**
-     * Logs into the AjaXplorer account.
+     * Logs into the Pydio account.
      *
      * @param successCallback  Called if login is successful.
      * @param failureCallback  Called back on error.
@@ -1123,7 +1123,7 @@ nsAjaXplorer.prototype = {
         };
 
         window.openDialog(
-            "chrome://ajaxplorer-for-filelink/content/authDialog.xhtml",
+            "chrome://pydio-for-filelink/content/authDialog.xhtml",
             "",
             "chrome, dialog, modal, resizable=yes",
             params).focus();
@@ -1157,7 +1157,7 @@ nsAjaXplorer.prototype = {
         };
 
         window.openDialog(
-            "chrome://ajaxplorer-for-filelink/content/repoDialog.xhtml",
+            "chrome://pydio-for-filelink/content/repoDialog.xhtml",
             "",
             "chrome, dialog, modal, resizable=yes",
             params).focus();
@@ -1207,7 +1207,7 @@ nsAjaXplorer.prototype = {
 // XPCOM factory registration //
 ////////////////////////////////
 
-const NSGetFactory = XPCOMUtils.generateNSGetFactory([nsAjaXplorer]);
+const NSGetFactory = XPCOMUtils.generateNSGetFactory([nsPydio]);
 
 
 //////////////////////////

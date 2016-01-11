@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-   AjaXplorer for Filelink is an extension for Mozilla Thunderbird that allows
+   Pydio for Filelink is an extension for Mozilla Thunderbird that allows
    you to easily send file attachments by uploading them to an storage service
-   that uses AjaXplorer as file management system.
+   that uses Pydio as file management system.
    
    Copyright (C) 2013  Diego Blanco Estévez
    
@@ -23,10 +23,10 @@
 
 <!DOCTYPE html [
     <!ENTITY % htmlDTD PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd"> %htmlDTD;
-    <!ENTITY % ajaxplorerDTD SYSTEM "chrome://ajaxplorer-for-filelink/locale/settings.dtd"> %ajaxplorerDTD;
+    <!ENTITY % pydioDTD SYSTEM "chrome://pydio-for-filelink/locale/settings.dtd"> %pydioDTD;
 ]>
 
-<dialog id="ajaxplorer-captcha" title="AjaXplorer"
+<dialog id="pydio-captcha" title="Pydio"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   buttons="accept,cancel"
   ondialogaccept="return onOK();">
@@ -35,8 +35,8 @@
         <head>
             <link rel="stylesheet" type="text/css" href="chrome://global/skin/global.css" />
             <link rel="stylesheet" type="text/css" href="chrome://messenger/skin/cloudfile/addAccountDialog.css" />
-            <link rel="stylesheet" type="text/css" href="chrome://ajaxplorer-for-filelink/skin/settings.css" />
-            <script type="application/javascript" src="chrome://ajaxplorer-for-filelink/content/authDialog.js"/>
+            <link rel="stylesheet" type="text/css" href="chrome://pydio-for-filelink/skin/settings.css" />
+            <script type="application/javascript" src="chrome://pydio-for-filelink/content/authDialog.js"/>
         </head>
         <body id="provider-settings" onload="onLoad();">
             <form id="provider-form" onsubmit="return false;">

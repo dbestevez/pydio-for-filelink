@@ -1,7 +1,7 @@
 /*
- * AjaXplorer for Filelink is an extension for Mozilla Thunderbird that allows
+ * Pydio for Filelink is an extension for Mozilla Thunderbird that allows
  * you to easily send file attachments by uploading them to an storage service
- * that uses AjaXplorer as file management system.
+ * that uses Pydio as file management system.
  * 
  * Copyright (C) 2013  Diego Blanco Estévez
  * 
@@ -64,9 +64,9 @@ var EXPORTED_SYMBOLS = [
 
 
 // URLs
-const A4F_URL_ICON       = "chrome://ajaxplorer-for-filelink/skin/icon.png";
-const A4F_URL_SETTINGS   = "chrome://ajaxplorer-for-filelink/content/settings.xhtml";
-const A4F_URL_MANAGEMENT = "chrome://ajaxplorer-for-filelink/content/management.xhtml";
+const A4F_URL_ICON       = "chrome://pydio-for-filelink/skin/icon.png";
+const A4F_URL_SETTINGS   = "chrome://pydio-for-filelink/content/settings.xhtml";
+const A4F_URL_MANAGEMENT = "chrome://pydio-for-filelink/content/management.xhtml";
 
 // Actions
 const A4F_ACTION_DELETE              = "delete";
